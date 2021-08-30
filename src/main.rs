@@ -12,7 +12,7 @@ fn generate_and_save_captcha(output: &str) {
 
     let mut rng = rand::thread_rng();
 
-    let diff = match rng.gen_range(0 as usize, 3 as usize) {
+    let diff = match rng.gen_range(0_usize, 3_usize) {
             0 => {
                 Difficulty::Easy
             },
@@ -42,7 +42,7 @@ fn generate_captchas_to_directory(n: usize, output: &str) {
     let bar = ProgressBar::new(n as u64);
 
     (0..n).into_par_iter().for_each(|_| {
-        generate_and_save_captcha(&output);
+        generate_and_save_captcha(output);
         bar.inc(1);
     });
 
@@ -78,7 +78,7 @@ fn main() {
                     .unwrap();
 
     if let Some(output) = namespace.value_of("output") {
-        generate_captchas_to_directory(number, &output);
+        generate_captchas_to_directory(number, output);
     } else {
         println!("{}", namespace.usage());
     }
