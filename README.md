@@ -2,7 +2,7 @@
 
 Generate large amounts of captchas (in parallel) with a simple binary written in Rust.
 
-Note: It is really **FAST**. (Generates 1500 captcha per second which is about $~12x$ faster compared to 125 captchas per second of a previous Numpythonic implementation.)
+Note: It is really **FAST**. (Generates 1500 captcha per second which is about **12 x** faster compared to 125 captchas per second of a previous Numpythonic implementation.)
 
 ## Usage
 
