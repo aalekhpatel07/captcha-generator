@@ -12,7 +12,7 @@ fn generate_and_save_captcha(output: &str) {
 
     let mut rng = rand::thread_rng();
 
-    let diff = match rng.gen_range(0_usize, 3_usize) {
+    let diff = match rng.gen_range(0_usize..3_usize) {
             0 => {
                 Difficulty::Easy
             },

@@ -2,7 +2,6 @@
 name = "generate-captcha"
 version = "0.1.0"
 edition = "2018"
-license = "MIT"
 license-file = "LICENSE"
 description = "Generate a training dataset of captchas. But do it really really fast."
 keywords = ["captcha", "machine-learning", "dataset-generator", "deep-learning", "dataset"]
@@ -13,8 +12,8 @@ homepage = "https://github.com/aalekhpatel07/captcha-generator/"
 repository = "https://github.com/aalekhpatel07/captcha-generator/"
 
 [dependencies]
-captcha = "*"
-clap = "*"
-rand = "*"
+captcha = "0.0.8"
+clap = "2.33.0"
+rand = "0.8.4"
 indicatif = "0.16.2"
-rayon = "*"
+rayon = "1.5.1"
