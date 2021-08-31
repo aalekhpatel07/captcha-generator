@@ -2,8 +2,15 @@
 name = "generate-captcha"
 version = "0.1.0"
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+license-file = "LICENSE"
+description = "Generate a training dataset of captchas. But do it really really fast."
+keywords = ["captcha", "machine-learning", "dataset-generator", "deep-learning", "dataset"]
+categories = ["computer-vision", "science"]
+exclude = ["/data"]
+readme = "README.md"
+homepage = "https://github.com/aalekhpatel07/captcha-generator/"
+repository = "https://github.com/aalekhpatel07/captcha-generator/"
 
 [dependencies]
 captcha = "*"
